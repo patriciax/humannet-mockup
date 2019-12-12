@@ -34,6 +34,8 @@ h1:hover a {
   background: #ec6a13;
   padding: 12px;
   color: #fff;
+  padding: 9px;
+  border-radius: 5px;
 }
 .btn-c:hover{
   background: #ffffff;
@@ -306,8 +308,11 @@ h5,
   font-size: 16px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.98);
 }
 
 @media screen and (max-width: 960px) {
@@ -1049,13 +1054,55 @@ textarea {
 
 
 /* styles */
+.pdf{
+  padding-bottom: 16px;
+  padding-top: 19px;
+}
+.media-body img{
+  width: 100%;
+  object-fit: contain;
+  height: 100px;
+}
+.grid-alianzas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.btn-form{
+  background: #ec6a13;
+    border-color: #F19050;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: unset;
+    padding: 0;
+    padding: 10px 40px 10px;
+}
+.btn-form:hover{
+  background: #fff;
+
+    color: #ec6a13;
+
+ }
+.style_form{
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
 
 .edit-text {
   color: #fff !important;
   font-weight: 900;
-  font-size: 4rem;
-  width: 94%;
+  font-size: 3rem;
+  width: 96%;
 
+}
+
+.prefer {
+  color: white;
+}
+.prefer h3{
+  color: #0c69ae;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .edit-text span {
@@ -1093,3 +1140,6 @@ textarea {
   margin-top: 100px;  
  }
 
+ .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+  color: #ec6a13!important;
+}
