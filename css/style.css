@@ -1086,6 +1086,10 @@ textarea {
   background: #fff;
   padding: 30px;
   border-radius: 5px;
+  text-align: center;
+}
+.style_form h3{
+
 }
 
 .edit-text {
@@ -1100,7 +1104,7 @@ textarea {
   color: white;
 }
 .prefer h3{
-  color: #0c69ae;
+  color: #fff;
   font-size: 1rem;
   font-weight: 700;
 }
