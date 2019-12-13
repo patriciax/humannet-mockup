@@ -785,7 +785,7 @@ textarea {
   width: 60px;
   display: block;
   float: left;
-  background: rgba(255, 255, 255, 0.05);
+  background: #fff;
   border-radius: 50%;
   position: relative;
 }
