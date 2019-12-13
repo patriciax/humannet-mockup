@@ -29,6 +29,16 @@ h1 a {
 h1:hover a {
   color: #FF6417;
 }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #fff !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #9E9E9E;
+}
 
 .btn-c{
   background: #ec6a13;
@@ -574,11 +584,11 @@ h5,
 }
 
 .btn.btn-primary {
-  background: #F19050;
+  background: #ec6a13;
   border-color: #F19050;
   color: #fff;
+  font-family: sans-serif;
 }
-
 .btn.btn-primary:hover,
 .btn.btn-primary:focus,
 .btn.btn-primary:active {
@@ -848,8 +858,8 @@ textarea {
 }
 
 .padding-top-bottom {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 .ftco-owl {
@@ -1146,4 +1156,108 @@ textarea {
 
  .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
   color: #ec6a13!important;
+}
+.modal-body {
+
+  font-family: sans-serif;
+  color: #000;
+}
+.modal-title {
+
+  font-weight: bolder;
+}
+
+
+.main-insurance__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-insurance .main-insurance__list li {
+  margin: 1rem 0;
+}
+
+.main-insurance .container-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  display: grid;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-insurance .container-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-insurance .container-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+.main-insurance .tab-content {
+  margin-bottom: 1rem;
+}
+
+.main-insurance .main-insurence__btn {
+  font-weight: 600;
+  color: #00e566;
+  transition: .3s;
+}
+
+.main-insurance .main-insurence__btn i {
+  transition: .3s;
+}
+
+.main-insurance .main-insurence__btn:hover i {
+  transform: translateX(0.5rem);
+  transition: .3s;
+}
+
+.main-insurance .main-insurance__img img {
+  width: 100%;
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1), 0px 8px 10px 1px rgba(0, 0, 0, 0.1), 0px 3px 14px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
+}
+
+.main-insurance .nav-tabs .nav-item.show .nav-link,
+.main-insurance .nav-tabs .nav-link.active {
+  box-shadow: 0px 5px 5px -3px rgba(4, 30, 70, 0.21), 0px 8px 10px 1px rgba(4, 30, 70, 0.39), 0px 3px 14px 2px rgba(4, 30, 70, 0.1);
+}
+
+.main-insurance .nav-tabs .nav-link {
+  border: none;
+  border: none;
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1), 0px 8px 10px 1px rgba(0, 0, 0, 0.1), 0px 3px 14px 2px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: .5rem;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-insurance .nav-tabs .nav-link {
+    margin: .5rem;
+  }
+}
+
+.main-insurance .nav-tabs {
+  border: none;
+}
+
+.main-insurance__icon {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.main-general__description  {
+  font-family: sans-serif;
+  color: #000000cc;
+}
+
+.main-general__title {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 1.9rem;
 }

@@ -163,7 +163,36 @@ $(document).ready(function($) {
 	};
 	OnePageNav();
 
-
+	$('.equipo').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 2,
+		dots: false,
+		arrows: true,
+		responsive: [{
+			breakpoint: 1200,
+			settings: {
+			  slidesToShow: 3,
+			  slidesToScroll: 3,
+			  infinite: true,
+			  dots: true
+			}
+		  },
+		  {
+			breakpoint: 900,
+			settings: {
+	
+			}
+		  },
+		  {
+			breakpoint: 600,
+			settings: {
+	
+			  autoplaySpeed: 1000
+			}
+		  }
+		]
+	  });
 
 });
 
