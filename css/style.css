@@ -77,10 +77,12 @@ h1:hover a {
   margin-left: 5px;
   margin-right: 5px;
   border-radius: 0;
-  background: #ec6a13;
+  border: 1px solid #ec6a13;
   padding-left: 25px;
     padding-right: 20px;
     transition: .5s;
+
+    width: 25%;
 }
 
 .allmargin:hover {
@@ -113,11 +115,12 @@ h1:hover a {
 
 .allmarginbg {
   transition: .5s;
-  background: #0c69ae;
+
+  border: 1px solid #0c69ae;
 }
 
 .allmargin img{
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); */
   transition: .5s;
 }
 .allmargin img:hover{
@@ -172,6 +175,9 @@ h5,
 #section-pricing .container-fluid .portfolio-box {
   position: relative;
   display: block;
+
+  height: 242px;
+ 
 }
 
 #section-pricing .container-fluid .portfolio-box .portfolio-box-caption {
@@ -613,7 +619,7 @@ h5,
   border: 1px solid rgba(0, 0, 0, 0.2);
   /* height: 55px; */
   background: none !important;
-  color: #000 !important;
+  color: #918e96 ;
   font-size: 18px;
 }
 
@@ -1112,10 +1118,11 @@ textarea {
 
 .prefer {
   color: white;
+  font-size: 22px;
 }
 .prefer h3{
   color: #fff;
-  font-size: 1rem;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -1155,7 +1162,7 @@ textarea {
  }
 
  .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-  color: #ec6a13!important;
+  color: #0c69ae!important
 }
 .modal-body {
 
@@ -1236,6 +1243,44 @@ textarea {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .ftco-footer-social li a {
+    height: 50px;
+    width: 50px;
+
+}
+  .center-content{
+    text-align: center;
+  }
+  .allmargin {
+    width: 83%;
+    margin-bottom: 30px;
+}
+  .grid-alianzas {
+ 
+    grid-template-columns: 1fr;
+}
+  .main-general__title {
+    font-size: 1.5rem !important;
+}
+  .bold {
+    font-weight: bold;
+    font-size: 2rem !important;
+}
+  #section-pricing
+  {
+    margin-top: 400px;
+  }
+  .edit-text {
+
+    font-size: 2rem;
+    width: 100%;
+}
+
+  #section-home .mt-5 {
+    margin-top: 0!important;
+}
+
+  
   .main-insurance .nav-tabs .nav-link {
     margin: .5rem;
   }
