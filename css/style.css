@@ -1119,6 +1119,7 @@ textarea {
 .prefer {
   color: white;
   font-size: 22px;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .prefer h3{
   color: #fff;
@@ -1162,7 +1163,7 @@ textarea {
  }
 
  .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-  color: #0c69ae!important
+  color: #d4d4d4!important!important
 }
 .modal-body {
 
@@ -1242,7 +1243,60 @@ textarea {
   margin: .5rem;
 }
 
+.grid-service{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.card-service{
+  box-shadow: 0px 0px 12px #0000005c;
+  padding: 50px;
+  background: #0c69ae;
+  color: #fff;
+  cursor: pointer;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+transition: .5s;
+}
+
+.card-service:hover{
+  background: #ffff;
+  color: #0c69ae;
+  transition: .5s;
+ 
+}
+
+.card-service span{
+  display: none;
+}
+.card-service:hover span {
+  display: initial;
+  font-size: 1.2rem;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #0c69ae;
+}
+.card-service p{
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Demi';
+  
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
+
+.prefer {
+ 
+  font-size: 16px;
+}
+  .grid-service{
+    padding: 10px;
+    grid-template-columns: 1fr;
+
+  }
   .ftco-footer-social li a {
     height: 50px;
     width: 50px;
@@ -1305,4 +1359,4 @@ textarea {
   font-family: sans-serif;
   font-weight: bolder;
   font-size: 1.9rem;
-}
+}prefer
